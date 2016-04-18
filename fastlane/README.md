@@ -11,30 +11,6 @@ sudo gem install fastlane
 fastlane android test
 ```
 Runs all the tests
-### android beta
-```
-fastlane android beta
-```
-Submit a new Beta Build to Crashlytics Beta
-### android sdk
-```
-fastlane android sdk
-```
-Test using git commad for library auto release
-### android googlebeta
-```
-fastlane android googlebeta
-```
-Deploy a new version to the Google Play Beta
-
-need to set your Google signing key credentails in envrionmemnt variables KEYSTORE, KEYSTORE_PASSWORD, KEY_ALIAS, and KEY_PASSWORD
-### android deploy
-```
-fastlane android deploy
-```
-Deploy a new version to the Google Play Production
-
-need to set your Google signing key credentails in envrionmemnt variables KEYSTORE, KEYSTORE_PASSWORD, KEY_ALIAS, and KEY_PASSWORD
 ### android release
 ```
 fastlane android release

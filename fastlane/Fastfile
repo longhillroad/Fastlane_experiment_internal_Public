@@ -44,6 +44,7 @@ platform :android do
     v="v"+release_number
 
     # push master branch from internal repo to public repo
+		git_command(full_command: "git config user.email aylaMobileRelease@aylanetworks.com")
     git_command(full_command: "git checkout master")
     ensure_git_branch(branch: "master")
     git_pull

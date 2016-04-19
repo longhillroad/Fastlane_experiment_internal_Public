@@ -34,7 +34,7 @@ platform :android do
     gradle(task: "test")
   end
 
-  desc "make a release. This lane requires: 1) \"public\" and \"origin\" remote have been set up; 2) developers should have already added release notes in README.md"
+  desc "make a release. This lane requires: 1) \"public\" and \"origin\" remote have been configured; 2) developers should have already added release notes in README.md"
 	desc "and modified version number strings in various files; 3) there is already a release/x.y.z branch existing. Developers make a PR from release branch to master"
 	desc "branch, release engineer merges PR, than run command like"
   desc " fastlane release version_number:\"1.3.00\""
@@ -76,6 +76,8 @@ platform :android do
     # if not auto-publish above, log in with release user on github and do release if everything is OK.
     # create PR to merge master back to develop and notify tech lead
     # send release notification email
+    puts "Code push completed successfully. Do release pubish if not yet when everything is OK."
+    puts "Then create PR to merge master back to develop"
   end
 
   # You can define as many lanes as you want

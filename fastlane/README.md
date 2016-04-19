@@ -15,7 +15,7 @@ Runs all the tests
 ```
 fastlane android release
 ```
-make a release. This lane requires: 1) "public" and "origin" remote have been set up; 2) developers should have already added release notes in README.md
+make a release. This lane requires: 1) "public" and "origin" remote have been configured; 2) developers should have already added release notes in README.md
 
 and modified version number strings in various files; 3) there is already a release/x.y.z branch existing. Developers make a PR from release branch to master
 
